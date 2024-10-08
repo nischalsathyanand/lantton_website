@@ -1,0 +1,277 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fc;
+  margin-top: 80px;
+}
+
+.register-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px;
+  color: #333;
+  background-color: #e3f2fd;
+  flex-wrap: wrap;
+}
+
+/* Left Section */
+.left-section {
+  width: 50%;
+}
+
+.heading-wrapper {
+  background-color: #ffca28;
+  display: inline-block;
+  padding: 12px 24px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.heading-wrapper h2 {
+  margin: 0;
+  font-size: 28px;
+  color: #333;
+}
+
+.join-list {
+  list-style: none;
+  padding: 0;
+}
+
+.join-list li {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.number-circle {
+  background-color: #ff6f61;
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  margin-right: 15px;
+}
+
+.description {
+  font-size: 18px;
+}
+
+/* Right Section */
+.right-section {
+  width: 45%;
+  background-color: #ffffff;
+  color: #333;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.form-heading {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0288d1;
+}
+
+.form-input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.phone-input-group {
+  display: flex;
+  align-items: stretch; /* Ensures both the country code and input are the same height */
+  margin-bottom: 20px;
+}
+
+.country-code {
+  width: 15%; /* Adjust width as needed */
+  height: 20px;
+  padding: 14px;
+  background-color: #ffffff;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid #ccc;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.phone-number {
+  width: 85%; /* Adjust width to complement the country code */
+  background-color: #ffffff;
+  border-radius: 0 5px 5px 0;
+  padding: 14px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(90deg, #0288d1 0%, #03a9f4 100%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 20px; /* Ensures proper spacing */
+}
+
+.submit-button:hover {
+  background: linear-gradient(90deg, #0277bd 0%, #0288d1 100%);
+}
+
+.contact-info {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.whatsapp-contacts {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.whatsapp-link {
+  display: flex;
+  align-items: center;
+  color: #25D366;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.whatsapp-link:hover {
+  text-decoration: underline;
+}
+
+.whatsapp-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1200px) {
+  .register-container {
+    padding: 30px;
+  }
+
+  .left-section, .right-section {
+    width: 48%;
+  }
+}
+
+@media (max-width: 992px) {
+  .left-section, .right-section {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .heading-wrapper h2 {
+    font-size: 24px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .form-heading {
+    font-size: 20px;
+  }
+
+  .form-input, .country-code, .phone-number, .submit-button {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .contact-info p {
+    font-size: 16px;
+  }
+
+  .whatsapp-link {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .register-container {
+    padding: 20px;
+  }
+
+  .heading-wrapper h2 {
+    font-size: 22px;
+  }
+
+  .form-heading {
+    font-size: 18px;
+  }
+
+  .form-input, .country-code, .phone-number, .submit-button {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .contact-info p {
+    font-size: 14px;
+  }
+
+  .whatsapp-link {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .register-container {
+    padding: 15px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-section, .right-section {
+    width: 100%;
+  }
+
+  .heading-wrapper h2 {
+    font-size: 20px;
+  }
+
+  .form-heading {
+    font-size: 16px;
+  }
+
+  .form-input, .country-code, .phone-number, .submit-button {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .contact-info p {
+    font-size: 12px;
+  }
+
+  .whatsapp-link {
+    font-size: 10px;
+  }
+
+  .whatsapp-icon {
+    width: 20px;
+    height: 20px;
+  }
+}

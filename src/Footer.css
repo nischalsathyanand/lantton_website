@@ -1,0 +1,30 @@
+.footer {
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-button {
+  background: none; /* Remove background */
+  border: none; /* Remove border */
+  color: #fff; /* Icon color */
+  font-size: 1.5rem; /* Increase icon size */
+  margin: 0 10px; /* Space between buttons */
+  cursor: pointer; /* Change cursor on hover */
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+/* Change color on hover */
+.social-button:hover {
+  color: #F54CC2; 
+}
+
+/* Optional: Style the icons */
+.social-button i {
+  display: inline-block; /* Ensure the icons are inline */
+}

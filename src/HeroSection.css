@@ -1,0 +1,22 @@
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .hero-content {
+    text-align: center;
+    color: #1e1d1d;
+  }
+  
+  .cta-button {
+    padding: 15px 30px;
+    background-color: #ff5733;
+    border: none;
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+  

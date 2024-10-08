@@ -1,0 +1,148 @@
+/* General styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px; /* Increased padding for better height */
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Move toggle button to the left end */
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    position: absolute;
+    left: 10px; /* Adjust the distance from the left edge */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1010; /* Ensure it's above other elements */
+    transition: color 0.3s ease;
+}
+
+.menu-toggle:hover {
+    color: #f53b57; /* Change the color when hovered */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 60px; /* Space added to move logo from the left edge */
+}
+
+.logo-image {
+    height: 50px; /* Adjust the height as necessary */
+    width: auto;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    position: relative;
+    margin: 0 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #5a5a5a; /* Subtle grey for text */
+    font-weight: 500;
+    font-size: 16px; /* Increased font size for better visibility */
+}
+
+.nav-links a:hover {
+    color: #000000; /* Change hover color to black */
+}
+
+/* Login Button Styling */
+.login-button {
+    padding: 12px 25px;
+    background-color: #F64BC4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px; /* Consistent font size */
+    transition: background-color 0.3s ease, padding 0.3s ease, font-size 0.3s ease;
+    text-align: center;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.login-button:hover {
+    background-color: #F64BC4;
+}
+
+/* Responsive Styles for Medium Screens */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Show toggle button on smaller screens */
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: white; /* Ensure menu matches background */
+        padding: 10px 0;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.open {
+        display: flex; /* Show the menu when open */
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .login-button {
+        padding: 12px 20px; /* Reduce padding for smaller screens */
+        font-size: 15px; /* Adjust font size */
+        width: auto; /* Let the button adapt based on content size */
+    }
+}
+
+/* Responsive Styles for Small Screens (Mobile) */
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.2em;
+    }
+
+    .navbar {
+        padding: 15px 10px; /* Reduce navbar padding on small screens */
+    }
+
+    .nav-links a {
+        font-size: 0.9em; /* Smaller font for nav links on mobile */
+    }
+
+    .login-button {
+        padding: 10px 15px; /* Further reduce padding for mobile */
+        font-size: 14px; /* Smaller font size for mobile */
+        width: 100%; /* Full width button for small screens */
+        margin-top: 10px; /* Add space between button and other content */
+    }
+}

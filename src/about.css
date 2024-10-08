@@ -1,0 +1,66 @@
+.about-page {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.about-header {
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-header h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+}
+
+.about-banner {
+    background-color:#4F66BC;
+    padding: 50px 0;
+    color: #fff;
+}
+
+.about-content {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.about-content h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.register-btn1 {
+    background-color: #F54CC2;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.register-btn:hover {
+    background-color: #004a30;
+}
+
+.about-details {
+    padding: 40px 20px;
+    background-color: #f7f7f7;
+}
+
+.about-details h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-details p {
+    font-size: 1rem;
+    color: #666;
+}
